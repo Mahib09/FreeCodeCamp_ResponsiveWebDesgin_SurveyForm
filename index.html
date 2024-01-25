@@ -1,41 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive web design - Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1 id="title"> Front end code form</h1>
-    <p id="description">Enter Description here</p>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank You for your time. Your Suggestions mean alot to us!!
+    </p>
     <form id="survey-form">
-        <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name: " required></label>
-        <label for="email" id="email-label">Name: <input type="email" id="email" placeholder="Enter your Email: " required></label>
-        <label for="number" id="number-label">Number: <input type="number" id="number" min="1" max="10" placeholder="Enter a Number"></label>
-        <select id="dropdown">
-            <option>
-                Yes
-            </option>
-            <option>
-                No
-            </option>
-        </select>
+      <label for="name" id="name-label"
+        >Name:
+        <input type="text" id="name" placeholder="Enter your name: " required
+      /></label>
+      <label for="email" id="email-label"
+        >Email:
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your Email: "
+          required
+      /></label>
+      <label for="number" id="number-label"
+        >Age:
+        <input
+          type="number"
+          id="number"
+          min="1"
+          max="10"
+          placeholder="Enter your age"
+      /></label>
+      <label for="dropdown">Was the website Helpul for you?</label>
+      <select id="dropdown">
+        <option>Yes</option>
+        <option>No</option></select
+      ><br /><br />
+      <fieldset>
         <radio>
-            <label for="Yes" id="radio-label">Yes<input type="radio" id="Yes" name="option" value="yes"></label>
-            <label for="No" id="radio-label">No <input type="radio" id="NO" name="option" value="no"></label>
+          <legend>Would you Recommend this to Your Friend?</legend>
+          <label for="definetly" id="radio-label"
+            ><input
+              type="radio"
+              id="definetly"
+              name="option"
+              value="definetly"
+              class="inline"
+              checked
+            />Definetly</label
+          >
+          <label for="sure" id="radio-label"
+            ><input
+              type="radio"
+              id="sure"
+              name="option"
+              value="sure"
+              class="inline"
+            />Sure</label
+          >
+          <label for="notsure" id="radio-label"
+            ><input
+              type="radio"
+              id="notsure"
+              name="option"
+              value="notsure"
+              class="inline"
+            />NotSure</label
+          >
         </radio>
+      </fieldset>
+      <fieldset>
         <checkbox>
-            <label for="1" id="checkbox-label">Javascript<input type="checkbox" id="1" name="1" value="Javascript"></label>
-            <label for="2" id="checkbox-label">HTML<input type="checkbox" id="2" name="2" value="HTML"></label>
-            <label for="3" id="checkbox-label">CSS<input type="checkbox" id="3" name="3" value="CSS"></label>
-            <label for="4" id="checkbox-label">PYTHON<input type="checkbox" id="4" name="4" value="PYTHON"></label>
-            <label for="5" id="checkbox-label">C++<input type="checkbox" id="5" name="5" value="C++"></label>
-            <label for="6" id="checkbox-label">JAVA<input type="checkbox" id="6" name="6" value="JAVA"></label>
+          <legend>What other Programming Languages you want to learn?</legend>
+          <label for="1" id="checkbox-label"
+            ><input
+              type="checkbox"
+              id="1"
+              name="1"
+              value="Javascript"
+              class="inline"
+            />
+            Javascript</label
+          >
+          <label for="2" id="checkbox-label"
+            ><input
+              type="checkbox"
+              id="2"
+              name="2"
+              value="HTML"
+              class="inline"
+            />
+            HTML</label
+          >
+          <label for="3" id="checkbox-label"
+            ><input
+              type="checkbox"
+              id="3"
+              name="3"
+              value="CSS"
+              class="inline"
+            />
+            CSS</label
+          >
+          <label for="4" id="checkbox-label"
+            ><input
+              type="checkbox"
+              id="4"
+              name="4"
+              value="PYTHON"
+              class="inline"
+            />
+            Python</label
+          >
+          <label for="5" id="checkbox-label"
+            ><input
+              type="checkbox"
+              id="5"
+              name="5"
+              value="C++"
+              class="inline"
+            />
+            C++</label
+          >
+          <label for="6" id="checkbox-label"
+            ><input
+              type="checkbox"
+              id="6"
+              name="6"
+              value="JAVA"
+              class="inline"
+            />
+            Java</label
+          >
         </checkbox>
-        <textarea placeholder=" Enter your comments here.." rows="10" cols="50">
-        </textarea>
-        <button id="submit">Submit</button>
+      </fieldset>
+      <fieldset>
+      <label for="comment">Feedback: </label>
+      <textarea id="comment" placeholder=" Enter your comments here.." rows="10" cols="50">
+      </textarea>
+    </fieldset>
+      <button id="submit">Submit</button>
     </form>
-</body>
+  </body>
 </html>
